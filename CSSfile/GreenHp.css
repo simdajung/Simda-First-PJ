@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #EEF2F1;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.container {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* 상단바 */
+.navbarbox {
+    margin-top: 20px;
+    width: 2300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#introlist > li{
+    cursor: pointer;
+}
+#activelist > li{
+    cursor: pointer;
+}
+#bookinglist > li{
+    cursor: pointer;
+}
+#surfShoplist > li{
+    cursor: pointer;
+}
+
+
+
+/* 상단 이미지 슬라이드 */
+.mainSlides {
+    width: 900px;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* 중간 메뉴바 */
+#menulist {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    width: 900px;
+    background-color: #333333;
+} 
+#menulist li {
+    padding: 30px;
+    text-align: center;
+    border: none;
+    color: white;
+    text-decoration-line: none;
+}
+
+/*중간 내용*/
+#fixbox{ 
+    width: 900px;
+    height: 1050px;
+    overflow-x: hidden;
+}
+
+/* 하단 메뉴바 */
+#footerlist {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    width: 900px;
+    background-color: #333333;
+    color: white;
+}
+
+#footerlist li {
+    padding: 30px;
+    text-align: center;
+}
+
+#footerSns{
+    display: flex;
+    list-style: none;
+    justify-content: right;
+    height: 100px;
+    background-color: #333333;
+    color: white;
+}
+
+#footerSns > img{
+    margin-top: 20px;
+    width: 50px;
+    height: 60px;
+}
+
+
+
+/* 아코디언 */
+
+.que:first-child {
+    border-top: 1px solid #dddddd;
+    background-color: #333333;
+    color: white;
+}
+
+.que {
+    position: relative;
+    padding: 17px 0;
+    cursor: pointer;
+    font-size: 14px;
+    border-bottom: 1px solid #dddddd;
+
+}
+
+.que::before {
+    display: inline-block;
+    font-size: 14px;
+    color: #82a8ee;
+    margin: 0 5px;
+}
+
+.que.on>span {
+    font-weight: bold;
+    color:  #82a8ee;
+}
+
+.anw {
+    display: none;
+    overflow: hidden;
+    font-size: 14px;
+    background-color: #f4f4f2;
+    padding: 27px 0;
+}
+
+.anw::before {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    margin: 0 5px;
+}
+
+.arrow-wrap {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(0, -50%);
+}
+
+.que .arrow-top {
+    display: none;
+}
+
+.que .arrow-bottom {
+    display: block;
+}
+
+.que.on .arrow-bottom {
+    display: none;
+}
+
+.que.on .arrow-top {
+    display: block;
+}

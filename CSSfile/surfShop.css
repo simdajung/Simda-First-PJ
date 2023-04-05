@@ -1,0 +1,24 @@
+body {
+    padding: 5rem;
+    -ms-overflow-style: none;
+    text-align: center;
+    background-color: white;
+} 
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.imageContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    grid-gap: 1rem;
+}
+
+.image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
