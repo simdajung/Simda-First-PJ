@@ -30,16 +30,7 @@ body{
     display: flex;
     justify-content: space-evenly;
 }
-#introlist > li{
-    cursor: pointer;
-}
-#activelist > li{
-    cursor: pointer;
-}
-#bookinglist > li{
-    cursor: pointer;
-}
-#surfShoplist > li{
+a > li{
     cursor: pointer;
 }
 

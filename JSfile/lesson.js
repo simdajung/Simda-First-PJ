@@ -1,7 +1,30 @@
+const itemTitles = document.querySelectorAll('.item-title');
 
-function level1(){
-    document.getElementById('level1').addEventListener('click',function(){
-        document.getElementById('레벨1설명').style.display='block';
+for (let i = 0; i < itemTitles.length; i++) {
+    itemTitles[i].addEventListener('click', function () {
 
-    }) 
-} 
+        console.log('클릭됨');
+                console.log(itemTitles[i]);
+
+        let itemContents = document.querySelectorAll('.item-content');
+        console.log(itemContents);
+        
+
+        for (let el of itemContents) {
+            el.classList.remove('active'); 
+        }
+
+        itemContents[i].classList.add('active');
+    });
+}
+
+
+document.querySelector('#allCloseBtn').addEventListener('click', function () {
+    let itemContents = document.querySelectorAll('.item-content');
+    for (let el of itemContents) {
+        el.classList.remove('active'); 
+    }
+
+
+
+});

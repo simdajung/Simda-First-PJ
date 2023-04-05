@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,14 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+    }
+
+    body {
+        -ms-overflow-style: none;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
     }
 
     .container {
@@ -26,7 +35,8 @@
         height: 400px;
 
     }
-    .video{
+
+    .video {
         width: 1000px;
         height: 600px;
         margin-top: 1px;
@@ -36,7 +46,7 @@
 <body>
     <div class="container">
         <video class="video" autoplay muted controls>
-            <source type="video/mp4" src="../Reproject/image1/a1.mp4" >
+            <source type="video/mp4" src="../Reproject/image1/a1.mp4">
         </video>
         <div>
             <h2>active</h2>

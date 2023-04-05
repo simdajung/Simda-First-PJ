@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
 }
 
 body {
@@ -11,21 +12,35 @@ body {
 ::-webkit-scrollbar {
     display: none;
 }
- 
-.container {
+.container{
     height: 100%;
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-#menulist>button {
-    display: inline-block;
-    justify-content: space-evenly;
+.header{
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header>img{
+    height: 580px; 
+    margin-top: 20px; 
+    position: relative;
 }
 
-table,tr,th,td{
-    border : 1px solid black;
+#menulist{
+    margin-top: 450px;
+    display: flex;
+    align-items: normal;
+    position: absolute;
 }
+#menulist >button {
+   margin: 30px;
+}
+
+
