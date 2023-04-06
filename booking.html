@@ -2,57 +2,42 @@
 <html>
 
 <head>
-    <title>서핑 예약</title>
+    <title>reservation</title>
     <link rel="stylesheet" href="../Reproject/CSSfile/booking.css">
 </head>
-<body> 
+<div>
+<body background="../Reproject/image1/loginback.jpg">
     <header>
-       <a href="../Reproject/GreenHp.html"><img src="../Reproject/image1/icon.png" style="width: 100px;"></a>
-        <h2>예약 페이지</h2>
+        <img src="../Reproject/image1/icon.png" style="width: 100px;">
+        <h2>Reservation</h2>
     </header>
     <main>
         <form action="submit.php" method="post">
             <fieldset>
                 <label for="name">이름:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="phone">전화번호:</label>
-                <input type="tel" id="phone" name="phone" required>
+                <input type="text" id="name" name="name" required><br>
 
                 <label for="date">날짜:</label>
-                <input type="date" id="date" name="date" required>
+                <input type="date" id="date" name="date" required><br>
 
                 <label for="time">시간:</label>
-                <input type="time" id="time" name="time" required>
+                <input type="time" id="time" name="time" required><br>
 
-                <label for="board">보드 선택:</label>
+                <label for="board">보드:</label>
                 <select id="board" name="board" required>
                     <option value="">보드 선택</option>
                     <option value="숏보드">숏보드</option>
                     <option value="롱보드">롱보드</option>
                     <option value="피쉬보드">피쉬보드</option>
-                </select>
+                </select><br>
 
-                <label for="wetsuit">웻슈트:</label>
+                <label for="wetsuit">슈트:</label>
                 <select id="wetsuit" name="wetsuit" required>
                     <option value="">웻슈트 선택</option>
                     <option value="노멀">노멀</option>
                     <option value="슬림핏">슬림핏</option>
                     <option value="두꺼운">두꺼운</option>
-                </select>
-
-                <label for="rental">렌탈 여부:</label>
-                <input type="radio" id="rental-yes" name="rental" value="예" required>
-                <label for="rental-yes">예</label>
-                <input type="radio" id="rental-no" name="rental" value="아니오" required>
-                <label for="rental-no">아니오</label>
-
-                <label for="instruction">강습 여부:</label>
-                <input type="radio" id="instruction-yes" name="instruction" value="예" required>
-                <label for="instruction-yes">예</label>
-                <input type="radio" id="instruction-no" name="instruction" value="아니오" required>
-                <label for="instruction-no">아니오</label>
-
+                </select><br>
                 <input type="submit" value="예약">
             </fieldset>
         </form>

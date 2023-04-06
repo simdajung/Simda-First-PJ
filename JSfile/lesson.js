@@ -1,30 +1,14 @@
-const itemTitles = document.querySelectorAll('.item-title');
-
-for (let i = 0; i < itemTitles.length; i++) {
-    itemTitles[i].addEventListener('click', function () {
-
-        console.log('클릭됨');
-                console.log(itemTitles[i]);
-
-        let itemContents = document.querySelectorAll('.item-content');
-        console.log(itemContents);
-        
-
-        for (let el of itemContents) {
-            el.classList.remove('active'); 
+function toggleDiv(num) {
+    var divs = document.querySelectorAll(".main > div");
+    for (var i = 0; i < divs.length; i++) {
+        if (divs[i].id === "div" + num) {
+            if (divs[i].style.display === "none") {
+                divs[i].style.display = "block";
+            } else {
+                divs[i].style.display = "none";
+            }
+        } else {
+            divs[i].style.display = "none";
         }
-
-        itemContents[i].classList.add('active');
-    });
-}
-
-
-document.querySelector('#allCloseBtn').addEventListener('click', function () {
-    let itemContents = document.querySelectorAll('.item-content');
-    for (let el of itemContents) {
-        el.classList.remove('active'); 
     }
-
-
-
-});
+}

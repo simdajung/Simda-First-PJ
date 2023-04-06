@@ -16,6 +16,8 @@
 
     body {
         -ms-overflow-style: none;
+        background: #000;
+        padding: 2rem;
     }
 
     ::-webkit-scrollbar {
@@ -41,17 +43,57 @@
         height: 600px;
         margin-top: 1px;
     }
+
+    h2 {
+        font-family: 'Arial';
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 3rem;
+        line-height: 0.75;
+    }
+
+    span {
+        display: block;
+    }
+
+    span:not(.light) {
+        opacity: 0;
+        animation: flashText .5s ease-out alternate infinite;
+    }
+
+    span.light {
+        position: relative;
+        display: inline-block;
+    }
+
+    @keyframes flash {
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes flashText {
+        to {
+            opacity: 0.15;
+        }
+    }
 </style>
 
 <body>
     <div class="container">
+        <div>
+            <h2>
+                <span>Faith is </span>
+                <span class="light">surfing </span>
+                <span>on the</span>
+                <span>Waves</span>
+                <span>of Life</span>
+            </h2>
+        </div>
         <video class="video" autoplay muted controls>
             <source type="video/mp4" src="../Reproject/image1/a1.mp4">
         </video>
-        <div>
-            <h2>active</h2>
-            <p>액티브창창창</p>
-        </div>
     </div>
 
 </body>

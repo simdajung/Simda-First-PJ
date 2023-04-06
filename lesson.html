@@ -19,33 +19,27 @@
 
 <body>
     <div class="container">
-
         <div class="header">
             <img src="../Reproject/image1/lesson.jpg">
             <div id="menulist">
-                <button type="button" class="btn btn-outline-light" class="item-title">초급 레슨</button>
-                <button type="button" class="btn btn-outline-light" class="item-title">중급 레슨</button>
-                <button type="button" class="btn btn-outline-light" class="item-title">레벨업 레슨</button>
-                <button type="button" class="btn btn-outline-light" class="item-title">이용요금</button><br>
-                <button type="button" class="btn btn-light">예약하기</button><br>
+                <button type="button" class="btn btn-outline-light" id="btn1" onclick="toggleDiv(1)">초급 레슨</button>
+                <button type="button" class="btn btn-outline-light" id="btn2" onclick="toggleDiv(2)">중급 레슨</button>
+                <button type="button" class="btn btn-outline-light" id="btn3" onclick="toggleDiv(3)">레벨업 레슨</button>
+                <button type="button" class="btn btn-outline-light" id="btn4" onclick="toggleDiv(4)">이용요금</button><br>
             </div>
         </div>
-        <div id='my_div'>
-            <p>꼭 확인해주세요</p>
-            <span>그린 웨이브 이용요금 안내</span>
-            <span>-영유아 36개월 미만 : 무료입장</span>
-        </div>
 
-        <div>
-            <div class="item-content">
+        <div class="main">
+            <div id="div1" style="display:none">
                 <ul>
                     <li>서핑을 처음 경험하시는 분</li>
                     <li>거품 파도에서 패들, 테이크오프를 연습하고 싶으신 분</li>
                     <li>롱 라이딩을 연습하시는 분</li>
                 </ul>
+                <button type="button" class="btn btn-light"> <a href="../Reproject/booking.html" style="color: black;">예약하기</a></button><br>
             </div>
 
-            <div class="item-content">
+            <div id="div2" style="display:none">
                 <ul>
                     <li>강사의 도움 없이 스스로 거품파도 잡기 (80% 이상 성공) 가능한 분</li>
                     <li>베이 초급 레슨에서 담당 강사에게 다음 레슨을 권장받은 분</li>
@@ -53,7 +47,8 @@
                     <li>사이드 라이딩을 연습하는 분</li>
                 </ul>
             </div>
-            <div class="item-content">
+
+            <div id="div3" style="display:none">
                 <ul>
                     <li>강사의 도움 없이 스스로 무릎사이즈의 깨지지 않은 파도 잡기 가능한 분</li>
                     <li>베이 중급레슨에서 담당 강사에게 다음 레슨을 권장받은 분</li>
@@ -61,97 +56,96 @@
                     <li>파도의 파워존을 따라 속도를 유지하며 롱라이딩을 연습하는 분</li>
                 </ul>
             </div>
+
+            <div id="div4" style="display:none">
+                <table class="table table-dark table-striped" style="text-align: center;">
+                    <tr>
+                        <th rowspan="2">자유서핑<br> 기준 :1세션</th>
+                        <td>화이트 자유서핑 80,000원</td>
+                        <td>미들 자유서핑 80,000원</td>
+                        <td>그린 자유서핑 80,000원</td>
+                    </tr>
+                    <tr>
+                        <td>+ 화이트 자유서핑 40,000원</td>
+                        <td>+ 미들 자유서핑 50,000원</td>
+                        <td>+ 그린 자유서핑 65,000원</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">서핑레슨<br> 기준 :1세션</th>
+                        <td>초급 100,000원</td>
+                        <td>중급 100,000원</td>
+                        <td>레벨업 110,000원</td>
+                    </tr>
+                    <tr>
+                        <td>+ 초급 70,000원</td>
+                        <td>+ 중급 70,000원</td>
+                        <td>+ 레벨업 80,000원</td>
+                    </tr>
+                </table>
+                <table class="table table-striped" style="text-align: center;">
+                    <tr>
+                        <th rowspan="6">물품대여</th>
+                        <th>슈트</th>
+                        <td>10,000원</td>
+                    </tr>
+                    <tr>
+                        <th>소프트보드</th>
+                        <td>16,000원</td>
+                    </tr>
+                    <tr>
+                        <th>하드보드</th>
+                        <td>40,000원</td>
+                    </tr>
+                    <tr>
+                        <th>글러브</th>
+                        <td>4,000원</td>
+                    </tr>
+                    <tr>
+                        <th>부츠</th>
+                        <td>4,000원</td>
+                    </tr>
+                    <tr>
+                        <th>비치타올</th>
+                        <td>1,000원</td>
+                    </tr>
+                </table>
+    
+                <table class="table table-striped" style="text-align: justify;">
+                    <tr>
+                        <th rowspan="2">썬배드</th>
+                        <td>평일</td>
+                        <td>20,000원</td>
+                    </tr>
+                    <tr>
+                        <td>주말</td>
+                        <td>20,000원</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">서프카바다</th>
+                        <td>평일/종일</td>
+                        <td>90,000원</td>
+                    </tr>
+                    <tr>
+                        <td>주말/종일</td>
+                        <td>90,000원</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="3">보드보관함</th>
+                        <td>12개월</td>
+                        <td>600,000원</td>
+                    </tr>
+                    <tr>
+                        <td>6개월</td>
+                        <td>400,000원</td>
+                    </tr>
+                    <tr>
+                        <td>3개월</td>
+                        <td>200,000원</td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
-    </div>
-
-    <!-- <div class="useBox">
-            <table class="table table-dark table-striped" style="text-align: center;">
-                <tr>
-                    <th rowspan="2">자유서핑<br> 기준 :1세션</th>
-                    <td>화이트 자유서핑 80,000원</td>
-                    <td>미들 자유서핑 80,000원</td>
-                    <td>그린 자유서핑 80,000원</td>
-                </tr>
-                <tr>
-                    <td>+ 화이트 자유서핑 40,000원</td>
-                    <td>+ 미들 자유서핑 50,000원</td>
-                    <td>+ 그린 자유서핑 65,000원</td>
-                </tr>
-                <tr>
-                    <th rowspan="2">서핑레슨<br> 기준 :1세션</th>
-                    <td>초급 100,000원</td>
-                    <td>중급 100,000원</td>
-                    <td>레벨업 110,000원</td>
-                </tr>
-                <tr>
-                    <td>+ 초급 70,000원</td>
-                    <td>+ 중급 70,000원</td>
-                    <td>+ 레벨업 80,000원</td>
-                </tr>
-            </table>
-            <table class="table table-striped" style="text-align: center;">
-                <tr>
-                    <th rowspan="6">물품대여</th>
-                    <th>슈트</th>
-                    <td>10,000원</td>
-                </tr>
-                <tr>
-                    <th>소프트보드</th>
-                    <td>16,000원</td>
-                </tr>
-                <tr>
-                    <th>하드보드</th>
-                    <td>40,000원</td>
-                </tr>
-                <tr>
-                    <th>글러브</th>
-                    <td>4,000원</td>
-                </tr>
-                <tr>
-                    <th>부츠</th>
-                    <td>4,000원</td>
-                </tr>
-                <tr>
-                    <th>비치타올</th>
-                    <td>1,000원</td>
-                </tr>
-            </table>
-
-            <table class="table table-striped" style="text-align: justify;">
-                <tr>
-                    <th rowspan="2">썬배드</th>
-                    <td>평일</td>
-                    <td>20,000원</td>
-                </tr>
-                <tr>
-                    <td>주말</td>
-                    <td>20,000원</td>
-                </tr>
-                <tr>
-                    <th rowspan="2">서프카바다</th>
-                    <td>평일/종일</td>
-                    <td>90,000원</td>
-                </tr>
-                <tr>
-                    <td>주말/종일</td>
-                    <td>90,000원</td>
-                </tr>
-                <tr>
-                    <th rowspan="3">보드보관함</th>
-                    <td>12개월</td>
-                    <td>600,000원</td>
-                </tr>
-                <tr>
-                    <td>6개월</td>
-                    <td>400,000원</td>
-                </tr>
-                <tr>
-                    <td>3개월</td>
-                    <td>200,000원</td>
-                </tr>
-            </table>
-        </div> -->
     </div>
 
 </body>

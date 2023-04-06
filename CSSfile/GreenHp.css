@@ -3,15 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+@font-face {
+    font-family: 'KIMM_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
     background-color: #EEF2F1;
     -ms-overflow-style: none;
+    font-family: 'KIMM_Bold';
 }
 
 ::-webkit-scrollbar {
     display: none;
 }
-
 
 .container {
     height: 100%;
@@ -30,11 +38,10 @@ body{
     display: flex;
     justify-content: space-evenly;
 }
-a > li{
+
+a>li {
     cursor: pointer;
 }
-
-
 
 /* 상단 이미지 슬라이드 */
 .mainSlides {
@@ -50,19 +57,24 @@ a > li{
     justify-content: space-evenly;
     width: 900px;
     background-color: #333333;
-} 
+}
+
 #menulist li {
     padding: 30px;
     text-align: center;
     border: none;
-    color: white;
+    color: rgb(109, 107, 107);
     text-decoration-line: none;
 }
 
+#menulist li:hover {
+    color: white;
+}
+
 /*중간 내용*/
-#fixbox{ 
+#fixbox {
     width: 900px;
-    height: 1050px;
+    height: 900px;
     overflow-x: hidden;
 }
 
@@ -81,7 +93,7 @@ a > li{
     text-align: center;
 }
 
-#footerSns{
+#footerSns {
     display: flex;
     list-style: none;
     justify-content: right;
@@ -90,7 +102,7 @@ a > li{
     color: white;
 }
 
-#footerSns > img{
+#footerSns>img {
     margin-top: 20px;
     width: 50px;
     height: 60px;
@@ -124,7 +136,7 @@ a > li{
 
 .que.on>span {
     font-weight: bold;
-    color:  #82a8ee;
+    color: #82a8ee;
 }
 
 .anw {
@@ -165,3 +177,4 @@ a > li{
 .que.on .arrow-top {
     display: block;
 }
+

@@ -12,35 +12,49 @@ body {
 ::-webkit-scrollbar {
     display: none;
 }
-.container{
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.container {
+    position: relative;
 }
-.header{
+
+.header {
     width: 600px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.header>img{
-    height: 580px; 
-    margin-top: 20px; 
+
+.header>img {
+    height: 580px;
     position: relative;
 }
 
-#menulist{
-    margin-top: 450px;
-    display: flex;
-    align-items: normal;
+/* 메인영역 */
+#menulist {
     position: absolute;
-}
-#menulist >button {
-   margin: 30px;
+    bottom: 0;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    /* 최대 높이 설정 */
+    overflow: auto;
+    /* 스크롤 적용 */
+}
 
+#div1,#div2,#div3,#div4 {
+    position: fixed;
+    top: 590px;
+    left: 150px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+#menulist>button {
+    margin: 20px;
+}
