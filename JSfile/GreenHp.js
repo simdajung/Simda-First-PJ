@@ -11,7 +11,7 @@ function carousel() {
     x[myIndex - 1].style.display = "block";
     setTimeout(carousel, 2000); // Change image every 2 seconds
 }
- 
+
 //메뉴 화면 
 const fixbox =document.getElementById("fixbox");
 const page1 = document.getElementById('introlist');
@@ -21,15 +21,19 @@ const page4 = document.getElementById('surfShoplist');
 
 page1.onclick = function() {
     fixbox.src="../Reproject/intro.html";
+    window.scrollTo({top: 400, behavior: 'smooth'});
 }
 page2.onclick = function() {
     fixbox.src="../Reproject/active.html";
+    window.scrollTo({top: 400, behavior: 'smooth'});
 }
 page3.onclick = function() {
     fixbox.src="../Reproject/lesson.html";
+    window.scrollTo({top: 400, behavior: 'smooth'});
 }
 page4.onclick = function() {
     fixbox.src="../Reproject/surfShop.html";
+    window.scrollTo({top: 400, behavior: 'smooth'});
 }
 
 //사업자정보 아코디언

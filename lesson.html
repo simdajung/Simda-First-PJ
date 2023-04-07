@@ -11,10 +11,6 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -25,40 +21,126 @@
                 <button type="button" class="btn btn-outline-light" id="btn1" onclick="toggleDiv(1)">초급 레슨</button>
                 <button type="button" class="btn btn-outline-light" id="btn2" onclick="toggleDiv(2)">중급 레슨</button>
                 <button type="button" class="btn btn-outline-light" id="btn3" onclick="toggleDiv(3)">레벨업 레슨</button>
-                <button type="button" class="btn btn-outline-light" id="btn4" onclick="toggleDiv(4)">이용요금</button><br>
+                <button type="button" class="btn btn-outline-light" id="btn4" onclick="toggleDiv(4)">이용요금</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;<a href="../Reproject/booking.html"><button type="button" class="btn btn-light">예약하기</button></a>
             </div>
         </div>
 
         <div class="main">
-            <div id="div1" style="display:none">
-                <ul>
-                    <li>서핑을 처음 경험하시는 분</li>
-                    <li>거품 파도에서 패들, 테이크오프를 연습하고 싶으신 분</li>
-                    <li>롱 라이딩을 연습하시는 분</li>
-                </ul>
-                <button type="button" class="btn btn-light"> <a href="../Reproject/booking.html" style="color: black;">예약하기</a></button><br>
+            <!-- 아무것도 안눌렸을때 박스 -->
+            
+            <!-- 토글박스 -->
+            <div id="div1" style="display:none;">
+                <div class="card border-dark mb-3" style="display: inline;">
+                    <div class="card-header">초급 레슨 추천대상</div>
+                    <div class="card-body text-dark">
+                        <h5 class="card-title">전문적인 코치들과 함께 인생 첫 파도를 타는 짜릿함을 느껴보세요!</h5>
+                        <p class="card-text">지상 교육을 통해 패들, 테이크오프 까지 배우고 스스로 거품 파도를 잡아 롱 라이딩 할 수 있도록 도와드릴게요!</p>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="./image1/f1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text"><br>서핑을 처음 경험하시는 분</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./image1/f2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">거품 파도에서 패들, 테이크오프를 연습하고 싶으신 분</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./image1/f3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text"><br>롱 라이딩을 연습하시는 분</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div id="div2" style="display:none">
-                <ul>
-                    <li>강사의 도움 없이 스스로 거품파도 잡기 (80% 이상 성공) 가능한 분</li>
-                    <li>베이 초급 레슨에서 담당 강사에게 다음 레슨을 권장받은 분</li>
-                    <li>스스로 그린웨이브를 잡기를 원하시는 분</li>
-                    <li>사이드 라이딩을 연습하는 분</li>
-                </ul>
+                <div class="card border-dark mb-3" style="display: inline;">
+                    <div class="card-header">중급 레슨 추천대상</div>
+                    <div class="card-body text-dark">
+                        <h5 class="card-title">스스로 거품 파도를 잡아서 라이딩이 가능한 분들을 위한 강습!</h5>
+                        <p class="card-text">베이초급레슨에서 여러 번 반복 연습 후 이용해주세요</p>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="./image1/f3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">강사의 도움 없이 스스로 거품파도 잡기 (80% 이상 성공) 가능한 분</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./image1/f2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text"><br>스스로 그린웨이브를 잡기를 원하시는 분</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./image1/f1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text"><br>베이 초급 레슨에서 담당 강사에게 다음 레슨을 권장받은 분</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div id="div3" style="display:none">
-                <ul>
-                    <li>강사의 도움 없이 스스로 무릎사이즈의 깨지지 않은 파도 잡기 가능한 분</li>
-                    <li>베이 중급레슨에서 담당 강사에게 다음 레슨을 권장받은 분</li>
-                    <li>스스로 허벅지 - 허리 사이즈의 그린웨이브를 잡는 연습을 하는 분</li>
-                    <li>파도의 파워존을 따라 속도를 유지하며 롱라이딩을 연습하는 분</li>
-                </ul>
+                <div class="card border-dark mb-3" style="display: inline;">
+                    <div class="card-header">레벨업 레슨 추천대상</div>
+                    <div class="card-body text-dark">
+                        <h5 class="card-title">스스로 그린웨이브를 잡아서 라이딩이 가능한 분들을 위한 강습!</h5>
+                        <p class="card-text">베이중급레슨에서 여러 번 반복 연습 후 이용해주세요.</p>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="./image1/f2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">강사의 도움 없이 스스로 무릎사이즈의 깨지지 않은 파도 잡기 가능한 분</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./image1/f1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">파도의 파워존을 따라 속도를 유지하며 롱라이딩을 연습하는 분</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="./image1/f3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">스스로 허벅지 - 허리 사이즈의 그린웨이브를 잡는 연습을 하는 분</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div id="div4" style="display:none">
                 <table class="table table-dark table-striped" style="text-align: center;">
+                    <br><br><br>
                     <tr>
                         <th rowspan="2">자유서핑<br> 기준 :1세션</th>
                         <td>화이트 자유서핑 80,000원</td>
@@ -82,6 +164,7 @@
                         <td>+ 레벨업 80,000원</td>
                     </tr>
                 </table>
+                <br><br><br>
                 <table class="table table-striped" style="text-align: center;">
                     <tr>
                         <th rowspan="6">물품대여</th>
@@ -107,40 +190,6 @@
                     <tr>
                         <th>비치타올</th>
                         <td>1,000원</td>
-                    </tr>
-                </table>
-    
-                <table class="table table-striped" style="text-align: justify;">
-                    <tr>
-                        <th rowspan="2">썬배드</th>
-                        <td>평일</td>
-                        <td>20,000원</td>
-                    </tr>
-                    <tr>
-                        <td>주말</td>
-                        <td>20,000원</td>
-                    </tr>
-                    <tr>
-                        <th rowspan="2">서프카바다</th>
-                        <td>평일/종일</td>
-                        <td>90,000원</td>
-                    </tr>
-                    <tr>
-                        <td>주말/종일</td>
-                        <td>90,000원</td>
-                    </tr>
-                    <tr>
-                        <th rowspan="3">보드보관함</th>
-                        <td>12개월</td>
-                        <td>600,000원</td>
-                    </tr>
-                    <tr>
-                        <td>6개월</td>
-                        <td>400,000원</td>
-                    </tr>
-                    <tr>
-                        <td>3개월</td>
-                        <td>200,000원</td>
                     </tr>
                 </table>
             </div>

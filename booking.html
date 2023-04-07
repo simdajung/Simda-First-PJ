@@ -21,22 +21,26 @@
                 <input type="date" id="date" name="date" required><br>
 
                 <label for="time">시간:</label>
-                <input type="time" id="time" name="time" required><br>
+                <select id="time" name="board" required>
+                    <option >09:00</option>
+                    <option >11:00</option>
+                    <option >14:00</option>
+                </select><br>
 
                 <label for="board">보드:</label>
                 <select id="board" name="board" required>
-                    <option value="">보드 선택</option>
-                    <option value="숏보드">숏보드</option>
-                    <option value="롱보드">롱보드</option>
-                    <option value="피쉬보드">피쉬보드</option>
+                    <option >보드 선택</option>
+                    <option >숏보드</option>
+                    <option >롱보드</option>
+                    <option>피쉬보드</option>
                 </select><br>
 
                 <label for="wetsuit">슈트:</label>
                 <select id="wetsuit" name="wetsuit" required>
-                    <option value="">웻슈트 선택</option>
-                    <option value="노멀">노멀</option>
-                    <option value="슬림핏">슬림핏</option>
-                    <option value="두꺼운">두꺼운</option>
+                    <option >선택안함</option>
+                    <option >노멀</option>
+                    <option >슬림핏</option>
+                    <option >두꺼운</option>
                 </select><br>
                 <input type="submit" value="예약">
             </fieldset>
