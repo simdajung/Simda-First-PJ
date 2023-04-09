@@ -9,8 +9,12 @@ let observer = new IntersectionObserver((e)=>{
     })
 })
 
-let div = document.querySelectorAll('div')
+let div = document.getElementsByClassName('box')
 observer.observe(div[0])
 observer.observe(div[1])
 observer.observe(div[2])
 observer.observe(div[3])
+observer.observe(div[4])
+observer.observe(div[5])
+observer.observe(div[6])
+
