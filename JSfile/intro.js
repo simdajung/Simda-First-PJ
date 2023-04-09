@@ -1,5 +1,3 @@
-
-             //<div>가 현재 화면에 보이는지 파악 쉬워짐
 let observer = new IntersectionObserver((e)=>{
     e.forEach((박스)=>{
         if (박스.isIntersecting){

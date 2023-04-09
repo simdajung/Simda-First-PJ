@@ -76,6 +76,7 @@ a>li {
     width: 900px;
     height:800px;
     overflow-x: hidden;
+    border: none;
 }
 
 /* 하단 메뉴바 */
@@ -116,6 +117,7 @@ a>li {
     border-top: 1px solid #dddddd;
     background-color: #333333;
     color: white;
+    text-align: center;
 }
 
 .que {

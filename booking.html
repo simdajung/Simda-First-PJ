@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>reservation</title>
-    <link rel="stylesheet" href="../Reproject/CSSfile/booking.css">
+    <link rel="stylesheet" href="CSSfile/booking.css">
 </head>
 <div>
-<body background="../Reproject/image1/loginback.jpg">
+<body background="image1/loginback.jpg">
     <header>
-        <img src="../Reproject/image1/icon.png" style="width: 100px;">
-        <h2>Reservation</h2>
+        <img src="image1/icon.png" style="width: 100px;">
+        <h2>예약하기</h2>
     </header>
     <main>
         <form action="submit.php" method="post">
@@ -37,10 +36,11 @@
 
                 <label for="wetsuit">슈트:</label>
                 <select id="wetsuit" name="wetsuit" required>
-                    <option >선택안함</option>
-                    <option >노멀</option>
-                    <option >슬림핏</option>
-                    <option >두꺼운</option>
+                    <option >사이즈선택</option>
+                    <option >4 (S)</option>
+                    <option >6 (M)</option>
+                    <option >8(L)</option>
+                    <option >10 (XL)</option>
                 </select><br>
                 <input type="submit" value="예약">
             </fieldset>
